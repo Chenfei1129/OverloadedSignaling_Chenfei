@@ -12,7 +12,7 @@ import Algorithms.constantNames as NC
 import Simulations.modelLabels_5_dimensions as ML
 
 from Simulations.setupModelInferences_moreWord import SetupModels
-from Simulations.setupSampledTrials_MultipleSignals_22 import SampleExperimentEnvironment4
+from Simulations.setupSampledTrials_MultipleSignals import SampleExperimentEnvironment4
 from Simulations.setupMetrics2 import SimulateModelFromDF, SingleAgentUtility_TaxicabMetric
 from Environments.Experiment.experimentConstruction import calculateLocationCost_TaxicabMetric
 from multiprocessing import Pool
