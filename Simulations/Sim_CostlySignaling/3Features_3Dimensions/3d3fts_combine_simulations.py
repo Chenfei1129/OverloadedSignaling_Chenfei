@@ -7,8 +7,10 @@ dirName = os.path.dirname(__file__)
 sys.path.append(os.path.join(dirName, '..'))
 from processCostlySignalingSimulation import findNumberofWordsinBaseline, getBaselineActionChoice, getSignalLength, calculateBits, getUtilityWithSignalCost, baselineChoice, getTypeOfReceiverFailure, isDIYBetterThanCCWithCosts, getUtilityWithSignalCost,getUtilityWithSignalCost_base 
 import matplotlib.pyplot as plt
-data = pd.read_pickle('simulation_signalerCanQuit_a4_r8_seed282_variedItemFullVocab_Chenfei_three_features_Comparison_More_Added_alpha10_maxSampling.pkl')
-data2 = pd.read_pickle('simulation_signalerCanQuit_a4_r8_seed282_variedItemFullVocab_Chenfei_three_features_Comparison_More_Added_alpha10_maxSampling_add.pkl')
+#data = pd.read_pickle('./simulation_signalerCanQuit_a4_r8_seed282_variedItemFullVocab_Chenfei_three_features_Comparison_More_Added_alpha10_maxSampling.pkl')
+data = pd.read_pickle('./simulation_3_dimensions_3_features_round1.pkl')
+#simulation_signalerCanQuit_a4_r8_seed282_variedItemFullVocab_Chenfei_three_features_Comparison_More_Added_alpha10_maxSampling
+data2 = pd.read_pickle('./simulation_3_dimensions_3_features_round2.pkl')
 data_more = pd.read_pickle('./simulation_3_dimensions_3_features_central_controller_round_3.pkl')
 data = data.append(data_more)
 sq_comm = data.loc[data['CentralControl_actor'] == 'receiver']
