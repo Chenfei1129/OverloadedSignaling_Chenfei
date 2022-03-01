@@ -35,8 +35,8 @@ def main():
         r = (4,7)
         fixedEnvironmentParameters = {'gridSize': gridDims, 'signalerPosition': s, 'receiverPosition': r}
         
-        itemSpace = ML.itemSpace_3Color3Shape
-        signalSpace = ML.featureSpace_3Color3Shape
+        itemSpace = ML.itemSpace_4Color5Shape
+        signalSpace = ML.featureSpace_4Color5Shape
         fluidParameterSpaces = {'targets': itemSpace,'signals': signalSpace}
 
         #Parameters specific to this simualation:
@@ -87,7 +87,7 @@ def main():
         
 
         #Save full simulated data
-        k.to_pickle('./simulation_5_dimensions_5_features_central_controller_round_6111.pkl')
+        k.to_pickle('./simulation_4_dimensions_5_features_central_controller_round_6111.pkl')
 
 if __name__ == "__main__":
         main()
