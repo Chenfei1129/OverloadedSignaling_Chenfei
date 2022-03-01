@@ -12,7 +12,7 @@ from Algorithms.ImaginedWe.GenerativeSignaler import SignalerZero
 from Algorithms.ImaginedWe.OverloadedReceiver import ReceiverZero
 from Algorithms.ImaginedWe.OverloadedSignaler import SignalerOne
 from Algorithms.ImaginedWe.PragmaticReceiver import ReceiverOne
-from Environments.Experiment.consistentSignalChecks_Experiment2 import SignalIsConsistent_Experiment, SignalIsConsistent_ExperimentSeparatedSignals
+from Environments.Experiment.consistentSignalChecks_Experiment_MultipleSignals import SignalIsConsistent_Experiment, SignalIsConsistent_ExperimentSeparatedSignals
 from Environments.Experiment.experimentConstruction import *
 
 ##############################################################
