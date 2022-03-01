@@ -8,7 +8,7 @@ import pandas as pd
 
 import Algorithms.constantNames as NC
 from Algorithms.ImaginedWe.mindConstruction import *
-from Algorithms.ImaginedWe.GenerativeSignaler2 import SignalerZero
+from Algorithms.ImaginedWe.GenerativeSignaler import SignalerZero
 from Algorithms.ImaginedWe.OverloadedReceiver import ReceiverZero
 from Algorithms.ImaginedWe.OverloadedSignaler import SignalerOne
 from Algorithms.ImaginedWe.PragmaticReceiver import ReceiverOne
@@ -31,7 +31,6 @@ class SetupExperiment_SignalsSeparated_Levels():
 
         self.signalerInactionPossible = signalerInactionPossible
         self.signalCost = signalCost
-
 
         self.receiverCostRatio = receiverCostRatio
 
@@ -134,7 +133,7 @@ class SetupExperiment_SignalsSeparated():
 
         self.receiverCostRatio = receiverCostRatio
         #self.getCost = CalculateLocationCost_TaxicabMetric_receiverCostRatio(self.receiverCostRatio)
-
+        #print(self.receiverCostRatio)
 
 
 
@@ -216,7 +215,6 @@ class SetupExperiment_SignalsSeparated():
         actionSpace = getActionSpace_SignalsSeparated(targetDictionary=targetDictionary,
             signalerPosition = signalerLocation, 
             receiverPosition = receiverLocation)
-        #print(targetDictionary)
         intentionSpace = list(targetDictionary.values())
         conditionDict = {NC.WORLDS: [1], NC.DESIRES: [1], NC.INTENTIONS: intentionSpace, NC.ACTIONS: actionSpace}
         return(conditionDict)
